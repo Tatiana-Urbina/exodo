@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --main-color: #211C84;
+    --secondary-color: #181419;
+    --third-color: #D91656;
+    --fourth-color: #ffffff;
+    --fifth-color: #27667B; 
+}
+
+body{
+    background-color: var(--secondary-color);
+    color: var(--fourth-color);
+}
+
+.carousel-item img {
+    max-width: 700px; /* Ajusta el ancho máximo */
+    max-height: 400px; /* Ajusta la altura máxima */
+    width: auto; /* Mantiene proporciones */
+    height: auto;
+    display: block; /* Asegura que se comporte correctamente */
+    margin: auto; /* Centra la imagen */
+}
+
+/*PANEL DE NAVEGACIÓN Y FOOTER*/
+.header, .piePag{
+    background-color: var(--fifth-color);
+    height: 10vh;
+    position: static;
+    top: 0;
+    z-index: 10;
+
+    .navegacion{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 40px;
+        padding: 1.5rem 0;
+
+        .imglogo{
+            padding-bottom: 10px;
+            width:50px;
+            height:44px;
+        }
+        
+        .listaNavegacion{
+            display: flex;
+            list-style: none;
+
+            li{
+                margin-right: 20px;
+            }
+
+            .linkNav{
+                text-decoration: none;
+                color: var(--fourth-color);
+                font-weight: 400;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+}
+
+/*BODY*/
+.sectionPrincipal{
+    height: 90vh;
+    background: linear-gradient(to right top, #00000081, #00000081), url(../img/IMG-20250303-WA0041.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: medium;
+    text-align: center;
+        .tituloPrincipal{
+            font-weight: 600;
+            font-size: 2rem;
+        }
+        
+        .subtituloPrincipal{
+            font-weight: 100;
+        }
+        .btnRegistrarse{
+            padding: 1rem 2rem;
+            margin: 30px;
+            background-color: var(--main-color);
+            text-decoration: none;
+            color: var(--fourth-color);
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            
+        }
+
+}
