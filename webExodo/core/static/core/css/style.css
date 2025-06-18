@@ -41,8 +41,8 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 40px;
-        padding: 1.5rem 0;
+        
+        padding-top: 1.5rem;
 
         .imglogo{
             padding-bottom: 10px;
@@ -53,6 +53,7 @@ body{
         .listaNavegacion{
             display: flex;
             list-style: none;
+            align-items: center;
 
             li{
                 margin-right: 20px;
@@ -66,7 +67,11 @@ body{
             }
         }
     }
-
+    
+.secDerechos{
+    padding-left: 600px;
+    color: var(--fourth-color);
+}
 }
 
 /*BODY*/
@@ -101,5 +106,151 @@ body{
             font-weight: 700;
             
         }
+}
+.tituloPrincipal{
+    margin-top: 30px;
+    text-align: center;
+}
+.sectCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    height: 80vh;
+    margin-top: 5rem;
+    .card{
+        width: 300px;
+        height: 400px; /* Altura fija para todas las tarjetas */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 
+        .card-img-top{
+            width: 100%;
+            height: 200px; /* Altura fija para las imágenes */
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
+
+/*CONTACTO*/
+.seccionContacto{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+    min-height: 100vh;
+    padding-top: 5rem;
+    .contForm{
+        
+
+        .titulo-contact{
+            text-align: center;
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+    }
+}
+
+/*LOGIN*/
+.sectLogin {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+    padding: 20px;
+}
+
+.formularioLogin {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.titulo-contact {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.contFormLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #1c5980;
+}
+/*DESTINOS*/
+.secDestinos{
+    display: flex;
+    flex-direction: row;
+}
+
+/*SIDEBAR*/
+.ulSidebar{
+    list-style: none;
+}
+
+.sidebar {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  width: 120px;
+  height: 100vh;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 20px 35px rgb(0, 0, 0, 0.1);
+}
+
+.linksSidebar{
+      position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 15px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+}
+
+.link{
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.items{
+    margin-top: 30px;
 }

@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+{% block content%}
+<section class="sectLogin">
+    <form method="post" class="formularioLogin">
+        <h2 class="titulo-contact">Iniciar Sesión</h2>
+        {% csrf_token %}
+        <div class="row formLogin">
+            <div class=" contFormLogin">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre de usuario:</label>
+                    <input class="form-control" type="text" name="username">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Contraseña:</label>
+                    <input class="form-control" type="password" name="password">
+                </div>
+                <div class="button">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+{% endblock %}
